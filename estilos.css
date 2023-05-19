@@ -1,0 +1,62 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+body {
+background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+url(img/fondo4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+header {
+    padding: 5px;
+    font-size: 34px;
+    color: white;
+    text-align: left;
+}
+h6 {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+}
+form {
+  width: 300px; 
+  text-align: left;
+}
+label {
+    display: inline-block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    color: white;
+}
+input[type="submit"] {
+  width: 100px;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #642b73;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: darkorchid;
+}
+
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff80;
+}
+footer {
+    background-color: #6d8ad4;
+    padding: 16px;
+    color: black;
+    text-align: center;
+  }

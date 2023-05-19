@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>    
+    <header>
+        Formulario Sencillo con Validacion
+    </header>
+    <main>
+        <form id="myForm" onsubmit="return validateForm()">
+
+            <h6>*TODOS LOS CAMPOS SON OBLIGATORIOS*</h6>
+            <label for="nombre">Nombre:</label>
+            <input placeholder="Ingresa tu nombre aquí..." type="text" id="name" required>
+
+            <label for="apellido">Apellido:</label>
+            <input placeholder="Ingresa tu Apellido aquí..." type="text" id="apellido" required>
+        
+            <div id="Sexo">
+            <input type="radio" name="sexo" id="Hombre"  required>
+            <label for="hombre">Hombre</label>
+            <br>
+            <input type="radio" name="sexo" id="Mujer" required>
+            <label for="mujer">Mujer</label>
+            </div> 
+
+            <div class="termCon">
+            <input type="checkbox" id="termCon"  required>
+            <label for="termCon">Términos y Condiciones</label>
+            </div>
+            
+            <input type="submit" value="Enviar">
+            <div id="errorDiv" class="error-message"></div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+             <h3>©Marez Caldera Edgar José</h3>
+        </div>
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+</html>
